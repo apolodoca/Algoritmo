@@ -11,9 +11,9 @@ int main(){
     string nova;
     for (char i:input) {
 
-         if (vogais.find(i) == string::npos){
+         if (vogais.find((char) tolower(i)) == string::npos){
             nova.push_back('.');
-            nova.push_back(i);
+            nova.push_back((char) tolower(i));
 
         }
 
